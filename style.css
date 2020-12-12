@@ -1,20 +1,22 @@
 body {
-  background: #F7F9FC;
-  color: #575F7D;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg');
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: lighter;
+  background-position: cover;
+  background-size: cover;
+  padding: 45px;
 }
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 h1 {
-  color: #575F7F;
-  font-size: 30px;
+  color: black;
+  font-size: 20px;
   font-weight: 900;
 }
 h2 {
-  color: #7ECE90;
+  color: black;
   font-size: 20px;
   font-weight: lighter;
   font-weight: 500;
@@ -30,27 +32,12 @@ a:hover {
   color: black;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+p{
+  font-weight: bold;
 }
 
 .container {
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -65,6 +52,11 @@ a:hover {
 
 .img-circle {
   border-radius: 50%;
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .btn-blue {
@@ -98,4 +90,14 @@ a:hover {
 
 #introduction p {
   margin-bottom: 40px;
+}
+
+.zoom {
+
+}
+
+.img-circle:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
